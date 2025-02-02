@@ -2,7 +2,7 @@
 # Installation steps
 
 ### step 1
-Install ollama to your computer:
+Install ollama to your computer (ubuntu):
 
 ```curl -fsSL https://ollama.com/install.sh | sh```
 
@@ -18,7 +18,7 @@ I used "llama2" model in my testing.
 
 ### step 3
 
-Run opems cli interface where you can interact with the model.
+Run opens cli interface where you can interact with the model.
 ```/bye``` to exit from cli interface.
 
 ```ollama help``` to see all available commands.
@@ -27,11 +27,14 @@ Run opems cli interface where you can interact with the model.
 install ollama python package.
 ```pip install ollama```
 
-Now you can try to main.py file to see how to interact with the model.
-
+Now you can try the main.py example.
 ```python main.py```
 
+![image](./images/example.png)
+
 ### Advanced example
-See the ModelFile example to create your own model.
-Creates a new model with the given name and file.
+ModelFile includes an example how to create a new model.
+Below example creates a mymodel using ModelFile.
+For parameter tweaking please see https://github.com/ollama/ollama/blob/main/docs/modelfile.md
+
 ```ollama create mymodel -f ModelFile```
